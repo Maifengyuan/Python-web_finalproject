@@ -36,7 +36,7 @@ Python语言基础期末项目存放仓库
 ### 项目意义
 本项目聚焦于以python语言学习群体，基于python-flask框架搭建的高德API实践交流网站。
 
-<div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/web%E6%9E%B6%E6%9E%84%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg" width="600" height="800" alt="web系统框架用例图"></div>
+<div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/Web%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg" width="650" height="800" alt="web系统架构图"></div>
 
 ### 功能架构图
 
