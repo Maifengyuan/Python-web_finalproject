@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-image: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			margin-top:5%;
+			margin-bottom:5%;
+			margin-left:10%;
+			margin-right:10%;
+			padding:0;
+		}
+		.container {
+            width: 100%;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+            padding: 30px 20px 30px 20px;
+            float: left;
+        }
+        h2 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: black;
+        }
+	</style>
+
+</head>
+
+<body>
+
+<h2>{{the_title}}</h2>
+<div class="container">
+	<table>
+		<tr><td>国家：</td><td>{{country}}</td></tr>
+		<tr><td>省份：</td><td>{{province}}</td></tr>
+		<tr><td>城市：</td><td>{{city}}</td></tr>
+		<tr><td>地区：</td><td>{{district}}</td></tr>
+		<tr><td>城市编码：</td><td>{{adcode}}</td></tr>
+		<tr><td>地理坐标：</td><td>{{location}}</td></tr>
+	</table>
+
+	<form action="/geocode_01">
+		<button type="submit">返回详细页</button>
+	</form>
+</div>
+
+
+
+</body>
+</html>

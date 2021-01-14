@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-image: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			margin-top:5%;
+			margin-bottom:5%;
+			margin-left:10%;
+			margin-right:10%;
+			padding:0;
+		}
+        h1 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: white;
+        }
+        .btn{
+            background-color: #00c4ff;
+            border-color: #00c4ff;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>{{title1}}</h1>
+
+	<table border="1">
+		
+		<tr>
+			{% for log_item in the_log_title %}
+			<td>
+				{{log_item}}	
+			</td>
+			{% endfor %}
+		</tr>
+		{% for log_row in the_data %}
+		<tr>
+			{% for item in log_row %}
+			<td>
+				{{item}}	
+			</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+
+	</table>
+
+	<form action="/entry">
+	<button type="submit">返回</button>
+	</form>
+</body>
+</html>

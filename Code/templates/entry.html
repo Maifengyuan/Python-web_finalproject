@@ -1,0 +1,149 @@
+<!-- {#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#	<link rel="stylesheet" type="text/css" href="static/Whole_style.css">#}
+{#</head>#}
+{#<body>#}
+{##}
+{#<h2>{{the_title}}</h2>#}
+{#<form method="Post" action="/search">#}
+{#<table>#}
+{#	<p>请在下方提交相应的信息：</p>#}
+{#	<tr>#}
+{#		<td>账号:</td>#}
+{#		<td><input type="text" name="phrase" width="60"></td>#}
+{#	</tr>#}
+{#	<tr>#}
+{#		<td>密码:</td>#}
+{#		<td><input type="text" name="letters" value=""></td>#}
+{#	</tr>#}
+{#	<tr>#}
+{#		<td>目标城市:</td>#}
+{#		<td><input type="text" name="City"></td>#}
+{#	</tr>#}
+{#</table>#}
+{#	<p>确认输入无误后，请点击按钮查询</p>#}
+{#	<button type="submit">登入</button>#}
+{#</form>#}
+{#<form action="/test">#}
+{#    <button type="submit">测试</button>#}
+{#</form>#}
+{##}
+{#</body>#}
+{#</html>#} -->
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/send.png" type="image/x-icon">
+
+    <title>{{ the_title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin-top:       5%;
+            margin-bottom:    5%;
+            margin-left:      10%;
+            margin-right:     10%;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+            padding: 30px 20px 30px 20px;
+            margin-bottom:2%;
+            float: left;
+        }
+        h1 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: white;
+        }
+        p {
+            color: white;
+            margin-block-end: 1em;
+        }
+        .btn-primary{
+            background: linear-gradient(to bottom, #a8e4fd);
+            border: linear-gradient(to bottom, #a8e4fd);
+            display:block;margin:0 auto;
+        }
+    </style>
+</head>
+<!-- <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Signin Template for Bootstrap</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head> -->
+<!-- <link rel="stylesheet" type="text/css" href="static/Whole_style.css"> -->
+  <body>
+    <h2>{{the_title}}</h2>
+    <div class="container">
+
+      <form class="form-signin" method="Post" action="/test">
+          <!-- <table> -->
+            <h3 class="form-signin-heading">更多功能请在此登入</h3>
+            <label for="inputEmail" class="sr-only">账号：</label>
+              <tr><td><input type="text" name="phrase" id="inputEmail" class="form-control" placeholder="账号" required autofocus></td></tr>
+            <label for="inputPassword" class="sr-only">密码：</label>
+              <tr><td><input type="password" name="letters" value="" id="inputPassword" class="form-control" placeholder="密码" required></td></tr>
+            <!-- <label for="inputaim" class="sr-only">目标地区</label>
+              <tr><td><input type="text" name="City" id="inputaim" class="form-control" placeholder="目标地区" required></td></tr> -->
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> 选择保存填写信息
+              </label>
+            </div>
+              <!-- </table> -->
+            <button class="btn btn-lg btn-primary" type="submit">登入</button>
+      </form>
+    <form class="form-signin" action="/add_stu">
+        <button class="btn btn-lg btn-primary" type="submit">注册</button>
+    </form>
+
+        <form class="form-signin" method="Post" action="/search">
+        	<h3 class="form-signin-heading">天气查询（免登入测试）</h3>
+        	<label for="inputaim" class="sr-only">目标地区</label>
+              <tr><td><input type="text" name="City" id="inputaim" class="form-control" placeholder="目标地区" required></td></tr>
+            <table>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">测试</button>
+            </table>
+        </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

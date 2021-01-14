@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  	<nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/test">返回主页</a></li>
+                <li><a href="#contact">关于博主</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他功能 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">路径规划</a></li>
+                    <li><a href="#">行政区域查询</a></li>
+                    <li><a href="#">搜索POI</a></li>
+                    <li><a href="#">天气查询</a></li>
+                    <li><a href="#">静态地图</a></li>
+                    <li><a href="#">IP定位</a></li>
+                    <li><a href="#">输入提示</a></li>
+                    <li><a href="#">坐标转换</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+<!--     <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">返回主页</a>
+          <a class="blog-nav-item" href="#">New features</a>
+          <a class="blog-nav-item" href="#">Press</a>
+          <a class="blog-nav-item" href="#">New hires</a>
+          <a class="blog-nav-item" href="#">关于博主</a>
+        </nav>
+      </div>
+    </div>
+ -->
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">地理/逆地理编码</h1>
+        <p class="lead blog-description">Geocoding/inverse geocoding</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">功能说明：</h2>
+
+            <p>地理编码/逆地理编码 API 是通过 HTTP/HTTPS 协议访问远程服务的接口，提供结构化地址与经纬度之间的相互转化的能力。</p>
+            <hr>
+            <p>结构化地址的定义： 地址是一串字符，内含国家、省份、城市、区县、城镇、乡村、街道、门牌号码、屋邨、大厦等建筑物名称。按照由大区域名称到小区域名称组合在一起的字符。<br/>注意：省、市、城镇等级别的地址构成是不能忽略的。暂时不支持返回台湾省的详细地址信息。</p>
+            <br/>
+            <blockquote>
+              <p><strong>名词解释：</strong><br/>- 地理编码：将详细的结构化地址转换为高德经纬度坐标。且支持对地标性名胜景区、建筑物名称解析为高德经纬度坐标。<br/>
+- 逆地理编码：将经纬度转换为详细结构化的地址，且返回附近周边的POI、AOI信息。</p>
+            </blockquote>
+            <br/>
+            <p><strong>产品功能应用场景设计:</strong><br/>地理编码api功能将字符串形式的地理位置数据转换成经纬度数据有助于处理大量位置信息，统一成经纬度格式存储，更易于机器识别和分析<br/>
+逆地理编码api功能可以用于将经纬度格式的数据转换为文字信息传递给用户。两种功能都可以用于数据转换服务。</p>
+			
+			<br/>
+			<br/>
+
+            <h2>代码示例：</h2>
+            <hr/>
+            <p>API服务地址:<a>https://restapi.amap.com/v3/geocode/geo?parameters</a></p>
+            <p>请求方式：GET</p>
+            <p><strong>参数</strong>必填：key,address<br/>选填：city,batch,sig,output,callback</p>
+            <br/>
+            <h3>一、封装函数</h3>
+            <pre><code>def geocode(key,address,city=None,batch=None,sig=None,output=None,callback=None):
+    geo_url = "https://restapi.amap.com/v3/geocode/geo?parameters"
+    """构造字典，名为parameters"""
+    parameters = {
+        "key":key,
+        "address":address,
+        "city":city,
+        "sig":sig,
+        "output":output,
+        "callback":callback
+    }
+    response = requests.get(url=geo_url,params=parameters)
+    return response.json()</code></pre>
+
+    		<hr/>
+            <h3>二、函数调用</h3>
+            <pre><code># 调用函数
+geocode(Mai_key,"广东省广州市从化区中山大学南方学院")us.</code></pre>
+			<hr/>
+			<h3>三、结果返回</h3>
+			<pre><code># 调用函数
+
+geocode(Mai_key,"广东省广州市从化区中山大学南方学院")
+
+{'status': '1',
+ 'info': 'OK',
+ 'infocode': '10000',
+ 'count': '1',
+ 'geocodes': [{'formatted_address': '广东省广州市从化区中山大学南方学院',
+   'country': '中国',
+   'province': '广东省',
+   'citycode': '020',
+   'city': '广州市',
+   'district': '从化区',
+   'township': [],
+   'neighborhood': {'name': [], 'type': []},
+   'building': {'name': [], 'type': []},
+   'adcode': '440117',
+   'street': [],
+   'number': [],
+   'location': '113.679287,23.632575',
+   'level': '兴趣点'}]}</code></pre>
+
+   			<hr/>
+   			<h3>四、json转换成pandas表格形式</h3>
+   			<pre><code># 转换成pandas表格(这里的数据不多，且层级关系少，不适合做成表格，主要用于演示pandas代码)
+results01 = geocode(Mai_key,"广东省广州市从化区中山大学南方学院")
+pd.json_normalize(results01['geocodes'][0])</code></pre>
+			
+			<hr/>
+			<h3>五、切片取值</h3>
+			<pre><code>地理编码 = results01['geocodes'][0]['location']
+地理编码</code></pre>
+			<pre><code>'113.679287,23.632575'</code></pre>
+
+			</div>
+			<br/>
+			<br/>
+			<h2>代码说明：</h2>
+            
+
+            <br/>
+            <br/>
+          <nav>
+            <ul class="pager">
+              <li><a href="#">返回顶部</a></li>
+              <li><a href="#">下一版块</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>本页面将详细介绍高德API的功能及其使用方法，主要运用编程语言<em>Python</em>，帮助你基本掌握功能的调用，并在开发中做到运用</p>
+          </div>
+         
+          <div class="sidebar-module">
+            <h4>Related content links</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Gitee-Python仓库链接</a></li>
+              <li><a href="#">Gitee-高德API仓库链接</a></li>
+            </ol>
+            <hr/>
+            <h3>调用测试</h3>
+            <form class="form-signin" method="Post" action="/geocode_query_res">
+	            <tr><td><input type="text" name="key_geocode" class="form-control" placeholder="秘钥"></td></tr>
+	            <tr><td><input type="text" name="add_geocode" class="form-control" placeholder="地理位置" required></td></tr>
+	            <button class="btn btn-lg btn-primary btn-block" type="submit">查询</button>
+        	</form>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+    <hr>
+    <footer class="pager">
+        <p>Email:m15603053551@163.com</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
