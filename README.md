@@ -16,6 +16,7 @@ Python语言基础期末项目存放仓库
 |序号|时间|备注|
 | --- | --- | --- |
 |1|2020-01-12|初步构建文档架构|
+|2|2020-01-14|添加web系统框架与功能说明图表|
 
 <br/>
 
@@ -35,11 +36,11 @@ Python语言基础期末项目存放仓库
 ### 项目意义
 本项目聚焦于以python语言学习群体，基于python-flask框架搭建的高德API实践交流网站。
 
-![web系统框架用例图](Figure/web架构流程图.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/web%E6%9E%B6%E6%9E%84%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg" width="200" height="500" alt="web系统框架用例图"></div>
 
 ### 功能架构图
 
-![思维导图](Figure/功能导图.jpg)
+<div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/%E5%8A%9F%E8%83%BD%E5%AF%BC%E5%9B%BE.jpg" width="400" height="400" alt="思维导图"></div>
 
 <br/>
 <br/>
