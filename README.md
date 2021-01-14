@@ -32,14 +32,14 @@ Python语言基础期末项目存放仓库
 <br/>
 
 ## 项目介绍
-
-本项目聚焦于以python语言学习群体，运用python-flask框架搭建的高德API实践交流网站。
-
-![web系统框架用例图](img/web架构流程图.jpg)
-
 ### 项目意义
+本项目聚焦于以python语言学习群体，基于python-flask框架搭建的高德API实践交流网站。
+
+![web系统框架用例图](Figure/web架构流程图.jpg)
 
 ### 功能架构图
+
+![思维导图](Figure/功能导图.jpg)
 
 <br/>
 <br/>
