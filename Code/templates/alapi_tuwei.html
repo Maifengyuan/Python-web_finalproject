@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-image: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			margin-top:5%;
+			margin-bottom:5%;
+			margin-left:10%;
+			margin-right:10%;
+			padding:0;
+		}
+		.container {
+            width: 100%;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+            padding: 30px 20px 30px 20px;
+            float: left;
+        }
+        h2 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: black;
+        }
+	</style>
+
+</head>
+
+<body>
+
+<h2>{{the_title}}</h2>
+<div class="container">
+	<table>
+		<tr><td>土味情话：</td><td>{{res}}</td></tr>
+		<tr><td>土味情话：</td><td>{{res}}</td></tr>
+		<!-- <tr><td>城市：</td><td>{{city}}</td></tr>
+		<tr><td>城市编码：</td><td>{{adcode}}</td></tr>
+		<tr><td>天气状况：</td><td>{{weather}}</td></tr>
+		<tr><td>气温：</td><td>{{temperature}}</td></tr>
+		<tr><td>风向：</td><td>{{winddirection}}</td></tr>
+		<tr><td>风力：</td><td>{{windpower}}</td></tr>
+		<tr><td>空气湿度：</td><td>{{humidity}}</td></tr>
+		<tr><td>响应时间：</td><td>{{reporttime}}</td></tr> -->
+	</table>
+
+
+	<!-- <form action="/viewlog">
+		<button type="submit">查看日志</button>
+	</form> -->
+	<form action="/alapi_tuwei01">
+		<button type="submit">返回</button>
+	</form>
+</div>
+
+
+
+</body>
+</html>
