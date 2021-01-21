@@ -58,14 +58,97 @@ Python语言基础期末项目存放仓库
 1. HTML+CSS（难度：中等）
 HTML需要掌握常用的功能，例如：按钮、input输入框、表单等；CSS则需要掌握3种样式的连接方式、页面内容及其布局的把控和大小颜色的设计等
 
+```
+div class="login_box">
+                <form class="form-signin" method="Post" action="/test">
+                    <tr><td><input type="text" name="phrase" id="inputEmail" class="form-control" placeholder="账号" required /></td></tr><label>账号</label>
+                    </div>
+                    <div class="login_box">
+                        <tr><td><input type="password" name="letters" value="" id="inputPassword" class="form-control" placeholder="密码" required></td></tr><label>密码</label>
+                    </div>
+                    <a href="javascript:void(0)">
+                    <button style="background-color:transparent;border-style:none;width:60px;height:30px;font-size:20px;color: white;" type="submit">登入</button>
+                    </a>
+                </form>
+```
+
 2. python基础知识点（难度：普通）
 基本掌握字典，列表，切片以及循环的使用
 
+```
+# 循环
+hello_viewlog():
+	with open("view.log","r") as log:
+		contents = []
+		for item in log:
+			contents.append([])
+			for i in item.split("|"):
+				contents[-1].append(escape(i))
+	# return str(contents)
+```
+```
+# 切片
+user_input_geocode = request.form['key_geocode']
+	con_input_geocode = request.form['add_geocode']
+	geotwo = geocode(user_input_geocode,con_input_geocode)
+	country2 = geotwo["geocodes"][0]['country']
+	province2 = geotwo["geocodes"][0]['province']
+	city2 = geotwo["geocodes"][0]['city']
+	district2 = geotwo["geocodes"][0]['district']
+	adcode2 = geotwo["geocodes"][0]['adcode']
+	location2 = geotwo["geocodes"][0]['location']
+```
+
 3. Flask框架与第三方模块（难度：偏难）
+
+```
+from flask import Flask,render_template,request,jsonify,escape,redirect,url_for
+from panduan import panduan_login
+from geo import weatherInfo,geocode
+from pymysql import connect
+import pandas as pd
+import time
+from alapi import duwei
+import requests
+from random import random
+from charts import mapcity
+from pyecharts import options as opts
+from pyecharts.charts import Map
+from pyecharts.faker import Faker
+```
 
 4. API调用（难度：偏难）
 
+```
+def mapcity():
+    c = (
+        Map()
+        .add(
+            "",
+            [list(z) for z in zip(ducity,dunum)],
+            "china-cities",
+            label_opts=opts.LabelOpts(is_show=False),
+        )
+        .set_global_opts(
+            title_opts=opts.TitleOpts(title="2018dujioashou"),
+            visualmap_opts=opts.VisualMapOpts(),
+        )
+        
+       # .render_notebook()
+     # .render("2018独角兽企业城市分布数量.html")#生成HTML文件，可在浏览器打开
+    )
+    return c.render()
+```
+
 5. 数据库MySQL（难度：中等）
+
+```
+conn = connect("localhost","root","@2916(Maify)","logmess")
+cursor = conn.cursor()
+sql = "select * from stuaccount"
+read_row = cursor.execute(sql)
+login_information = cursor.fetchall()
+```
 
 6. 云端部署（难度：普通）
 
@@ -86,20 +169,34 @@ HTML需要掌握常用的功能，例如：按钮、input输入框、表单等�
 #### 注册与登录系统
 以表单形式将数据传入数据库中，通过信息匹配完成注册到登入的步骤
 
+[注册页](baidu.com)
+
+[登入页](baidu.com)
+
 #### 日志系统
 - 在免费API测试功能结果中添加日志系统，记录用户的搜索记录，并传入指定文件中
+
+[日志页](baidu.com)
 
 #### 高德功能主页
 - 详细页中设置链接通过添加数据实现免秘钥功能调用
 
+![页面样式](baidu.com)
+
 #### ALapi功能主页
 - 详细页中设置链接实现一间功能调用
+
+![页面样式](baidu.com)
 
 #### Pyecharts主页
 - 详细页中设置链接将案例图片以html文件形式保存至本地
 
+![页面样式](baidu.com)
+
 #### 留言板
 - 用户通过留言板随时添加离线形式的留言信息，并生成发布时间
+
+[留言板](baidu.com)
 
 <div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/%E6%95%B0%E6%8D%AE%E6%B5%81.jpg" width="650" height="500" alt="数据流"></div>
 
