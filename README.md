@@ -6,7 +6,7 @@
 
 |项目名称|[Python+API学习平台](http://maify.pythonanywhere.com/welcome)|
 | --- | --- |
-|云端部署||
+|云端部署|http://maify.pythonanywhere.com/welcome|
 |作者|麦锋源|
 |最后修订日期|2021-01-21|
 
@@ -32,9 +32,7 @@
 
 <h3 id="chapter1">一、问题表述</h3>
 
-#### 用户画像
-
-**简要说明：**<br/>
+#### 简要说明：
 用户定位于python_web知识相关的初学者，主要使用场景课后自我拓展与API知识的实践，解决编程零基础入门的难题。
 
 ![用户画像](Figure/用户画像.png)
