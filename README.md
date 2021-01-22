@@ -8,20 +8,17 @@
 | --- | --- |
 |云端部署|http://maify.pythonanywhere.com/welcome|
 |作者|麦锋源|
-|最后修订日期|2021-01-21|
-
-***
-
-## 目录
-
-|序号|目录栏|
-| --- | --- |
+|最后修订日期|2021-01-22|
+|技术支持|[知识点汇总](https://gitee.com/maifengyuan/python-coursework.git)|
+|**序号**|**目录栏**|
 |1|[问题表述](#chapter1)|
 |2|[解决方案](#chapter2)|
 |3|[编程功能](#chapter3)|
 |4|[云端部署](#chapter4)|
 |5|[总结与感谢](#chapter5)|
-<br/>
+
+***
+
 <br/>
 
 ### 项目简介
@@ -29,19 +26,21 @@
 
 <div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/Web%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg" width="650" height="800" alt="web系统架构图"></div>
 
+<br/>
 
 <h3 id="chapter1">一、问题表述</h3>
 
-#### 简要说明：
 用户定位于python_web知识相关的初学者，主要使用场景课后自我拓展与API知识的实践，解决编程零基础入门的难题。
 
 ![用户画像](Figure/用户画像.png)
 
 <br/>
 用户旅程重点是说明对于Python+API知识通过网站自学的过程，现分为4个步骤：了解——尝试——掌握——交流与分享，用户的使用过程也是基于这4个方面循序渐进。
+<br/>
 
 ![用户旅程图](Figure/用户旅程图.png)
 
+<br/>
 <br/>
 
 <h3 id="chapter2">二、解决方案</h3>
@@ -55,8 +54,6 @@
 <br/>
 
 <h3 id="chapter3">三、编程功能的基本描述</h3>
-
-<br/>
 
 #### 知识点涉及
 
@@ -168,6 +165,9 @@ login_information = cursor.fetchall()
 |4|零基础：两周；一定基础：一周左右|API知识不容易上手，熟悉调用方法后基本是按同一个逻辑操作，不同功能的使用难度跨度较大|
 |5|零基础：一周；一定基础：2天|数据库对于简单的Web开发只需要掌握简单的增、删、改、查即可|
 |6|零基础：4天左右；一定基础：2天左右|云端部署要记住关键的操作，同时要熟悉console中的命令|
+
+<br/>
+<br/>
 
 <h3 id="chapter4">四、云端部署的基本描述</h3>
 
