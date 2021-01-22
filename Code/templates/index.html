@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+    <title>留言板</title>
+    <style type="text/css">
+        body {
+            background-image: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin-top:5%;
+            margin-bottom:5%;
+            margin-left:10%;
+            margin-right:10%;
+            padding:0;
+        }
+        .container {
+            width: 100%;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+            padding: 30px 20px 30px 20px;
+            float: left;
+        }
+        h2 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+        <center><h1>留言</h1></center>
+        <center>
+            <form action="{{ url_for('index') }}" method="POST">
+                用户名称: <input type="text" name="say_user"><br>
+                留言标题: <input type="text" name="say_title"><br>
+                留言内容: <input type="text" name="say"><br>
+                <button>提交留言</button>
+            </form>
+            <form action="/test_gaode">
+                <button type="submit">返回高德功能主页</button>
+            </form>
+            <p>站主联系方式email：1332814096@qq.com</p>
+        </center>
+        
+    <div class="container">
+    <center>
+        <table border="2">
+            <thead>
+            <tr>
+                <th>标题</th>
+                <th>内容</th>
+                <th>用户</th>
+                <th>留言时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for say in says %}
+                <tr>
+                    <td>{{ say['title'] }}</td>
+                    <td>{{ say['text'] }}</td>
+                    <td>{{ say['user'] }}</td>
+                    <td>{{ say['date'] }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</div>
+</body>
+</html>
