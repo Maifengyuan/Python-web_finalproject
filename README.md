@@ -1,15 +1,16 @@
 # Python-web_finalproject
-Python语言基础期末项目存放仓库
+
 <br/>
 
-## 文档简介
-改文档用于描述python_web项目的应用与价值
+## 文档说明
 
-|项目名称|高德API测试|
+|项目名称|[Python+API学习平台](http://maify.pythonanywhere.com/welcome)|
 | --- | --- |
-|云端部署|Url|
+|云端部署||
 |作者|麦锋源|
 |最后修订日期|2021-01-21|
+
+***
 
 ## 目录
 
@@ -33,7 +34,13 @@ Python语言基础期末项目存放仓库
 
 #### 用户画像
 
+**简要说明：**<br/>
+用户定位于python_web知识相关的初学者，主要使用场景课后自我拓展与API知识的实践，解决编程零基础入门的难题。
+
 ![用户画像](Figure/用户画像.png)
+
+<br/>
+用户旅程重点是说明对于Python+API知识通过网站自学的过程，现分为4个步骤：了解——尝试——掌握——交流与分享，用户的使用过程也是基于这4个方面循序渐进。
 
 ![用户旅程图](Figure/用户旅程图.png)
 
@@ -168,12 +175,14 @@ login_information = cursor.fetchall()
 
 |页面|说明|预览|
 | --- | --- | --- |
-|注册与登录系统|以表单形式将数据传入数据库中，通过信息匹配完成注册到登入的步骤|[注册页](baidu.com)，[登入页](baidu.com)|
-|日志系统|在免费API测试功能结果中添加日志系统，记录用户的搜索记录，并传入指定文件|[日志页](baidu.com)|
-|高德功能主页|详细页中设置链接通过添加数据实现免秘钥功能调用|![页面样式](baidu.com)|
-|ALapi功能主页|详细页中设置链接实现一间功能调用|![页面样式](baidu.com)|
-|Pyecharts主页|详细页中设置链接将案例图片以html文件形式保存至本地|![页面样式](baidu.com)|
-|留言板|用户通过留言板随时添加离线形式的留言信息，并生成发布时间|[留言板](baidu.com)|
+|注册与登录系统|以表单形式将数据传入数据库中，通过信息匹配完成注册到登入的步骤|[注册页](http://maify.pythonanywhere.com/add_stu)，[登入页](http://maify.pythonanywhere.com/dengru)|
+|日志系统|在免费API测试功能结果中添加日志系统，记录用户的搜索记录，并传入指定文件|[日志页](http://maify.pythonanywhere.com/viewlog?)|
+|高德功能主页|详细页中设置链接通过添加数据实现免秘钥功能调用|![页面链接](baidu.com)|
+|ALapi功能主页|详细页中设置链接实现一间功能调用|[页面链接](http://maify.pythonanywhere.com/test)|
+|Pyecharts主页|详细页中设置链接将案例图片以html文件形式保存至本地|![页面链接](Figure/地图结果.png)|
+|留言板|用户通过留言板随时添加离线形式的留言信息，并生成发布时间|[留言板](http://maify.pythonanywhere.com/say/)|
+
+#### 数据流程图
 
 <div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/%E6%95%B0%E6%8D%AE%E6%B5%81.jpg" width="650" height="500" alt="数据流"></div>
 
