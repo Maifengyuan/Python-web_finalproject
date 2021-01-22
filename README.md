@@ -17,6 +17,7 @@
 |3|[编程功能](#chapter3)|
 |4|[云端部署](#chapter4)|
 |5|[总结与感谢](#chapter5)|
+|6|[项目开发问题收集](#chapter6)|
 
 ***
 
@@ -185,6 +186,9 @@ login_information = cursor.fetchall()
 
 <div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/%E6%95%B0%E6%8D%AE%E6%B5%81.jpg" width="650" height="500" alt="数据流"></div>
 
+<br/>
+<br/>
+
 <h3 id="chapter5">学习/实践心得总结及感谢</h3>
 Python期末项目相当于对整个学期的知识进行总结运用，在开发与实践过程中自己受益匪浅，待代码逻辑的不断学习与打磨减少了自己在面对困难时的恐惧感，多增加了一份探索和求知的欲望。此外，这次的项目也让自己认识到需要的不足，包括网页设计、网页体验流畅性和对数据的处理等，对自己的产品思维上有很多的启发。最后，感谢老师的耐心教导和同学们的帮助。
 
@@ -192,3 +196,7 @@ Python期末项目相当于对整个学期的知识进行总结运用，在开�
 - HTML文件：18项
 - CSS样式文件：4项
 - Py文件：5项（3份API文件，1份数据库文件，1分web主函数）
+
+***
+
+<h3 id="chapter4">四、云端部署的基本描述</h3>
