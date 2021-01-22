@@ -9,7 +9,8 @@
 |云端部署|http://maify.pythonanywhere.com/welcome|
 |作者|麦锋源|
 |最后修订日期|2021-01-22|
-|技术支持|[知识点汇总](https://gitee.com/maifengyuan/python-coursework.git)|
+|技术支持|[知识点汇总仓库](https://gitee.com/maifengyuan/python-coursework.git)|
+|项目使用手册|待上传|
 |**序号**|**目录栏**|
 |1|[问题表述](#chapter1)|
 |2|[解决方案](#chapter2)|
