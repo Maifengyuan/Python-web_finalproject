@@ -196,11 +196,6 @@ login_information = cursor.fetchall()
 <br/>
 <br/>
 
-<h3 id="chapter0">项目体验说明</h3>
-
-<br/>
-<br/>
-
 <h3 id="chapter5">学习/实践心得总结及感谢</h3>
 Python期末项目相当于对整个学期的知识进行总结运用，在开发与实践过程中自己受益匪浅，待代码逻辑的不断学习与打磨减少了自己在面对困难时的恐惧感，多增加了一份探索和求知的欲望。此外，这次的项目也让自己认识到需要的不足，包括网页设计、网页体验流畅性和对数据的处理等，对自己的产品思维上有很多的启发。最后，感谢老师的耐心教导和同学们的帮助。
 
@@ -218,3 +213,8 @@ Python期末项目相当于对整个学期的知识进行总结运用，在开�
 |Python读取图片|[博客](https://www.cnblogs.com/lantingg/p/9259840.html)|
 |flask文件运行报错，错误信息UnicodeDecodeEorror:'utf-8' codec can't decode byte 0xc2 in position 2: invalid continuation bute|[参考解决方案](https://blog.csdn.net/qq_41109668/article/details/82908455)，[参考2](https://blog.csdn.net/stone9159/article/details/79071316)|
 |cmd-mysql拒绝链接，2003-Can't connect to MySql server on 'localhost'(10061)错误|[解决方案](https://blog.csdn.net/yyx3214/article/details/97097696)|
+
+<br/>
+<br/>
+
+<h3 id="chapter0">项目体验说明</h3>
