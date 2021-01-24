@@ -11,7 +11,12 @@
 |最后修订日期|2021-01-22|
 |技术支持|[知识点汇总仓库](https://gitee.com/maifengyuan/python-coursework.git)|
 |项目使用手册|待上传|
-|**序号**|**目录栏**|
+
+<br/>
+
+|序号|目录栏|
+| --- | --- |
+|0|[项目体验说明](#chapter0)|
 |1|[问题表述](#chapter1)|
 |2|[解决方案](#chapter2)|
 |3|[编程功能](#chapter3)|
@@ -21,14 +26,9 @@
 
 ***
 
-### 项目导览
-1. 使用视频
-[视频链接]()
-
-2. 网页图片
-
-
 <br/>
+
+![网页预览](Figure/网站首页.png)
 
 ### 项目简介
 本项目聚焦于以python语言学习群体，基于python-flask框架搭建的高德API实践交流网站。用户可通过登入网页后选择不同功能API进行学习和调用实践，并通过离线留言板进行疑难解答。以更直观、更多样化的方式输出网新专业相关知识，打造一个自主学习平台。
@@ -192,6 +192,11 @@ login_information = cursor.fetchall()
 #### 数据流程图
 
 <div align=center><img src="https://github.com/Maifengyuan/Python-web_finalproject/blob/main/Figure/%E6%95%B0%E6%8D%AE%E6%B5%81.jpg" width="650" height="500" alt="数据流"></div>
+
+<br/>
+<br/>
+
+<h3 id="chapter0">项目体验说明</h3>
 
 <br/>
 <br/>
