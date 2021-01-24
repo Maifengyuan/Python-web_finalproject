@@ -212,8 +212,9 @@ Python期末项目相当于对整个学期的知识进行总结运用，在开�
 ***
 
 <h3 id="chapter6">六、项目开发问题收集</h3>
+
 |问题|解决方案|
 | --- | --- |
 |Python读取图片|[博客](https://www.cnblogs.com/lantingg/p/9259840.html)|
-|flask文件运行报错，错误信息：UnicodeDecodeEorror : 'utf-8' codec can't decode byte 0xc2 in position 2: invalid continuation bute|[参考解决方案](https://blog.csdn.net/qq_41109668/article/details/82908455)，[参考2](https://blog.csdn.net/stone9159/article/details/79071316)|
+|flask文件运行报错，错误信息UnicodeDecodeEorror:'utf-8' codec can't decode byte 0xc2 in position 2: invalid continuation bute|[参考解决方案](https://blog.csdn.net/qq_41109668/article/details/82908455)，[参考2](https://blog.csdn.net/stone9159/article/details/79071316)|
 |cmd-mysql拒绝链接，2003-Can't connect to MySql server on 'localhost'(10061)错误|[解决方案](https://blog.csdn.net/yyx3214/article/details/97097696)|
