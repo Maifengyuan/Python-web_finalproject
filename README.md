@@ -10,7 +10,7 @@
 |作者|麦锋源|
 |最后修订日期|2021-01-22|
 |技术支持|[知识点汇总仓库](https://gitee.com/maifengyuan/python-coursework.git)|
-|项目使用手册|待上传|
+|项目使用手册|[百度网盘链接](https://pan.baidu.com/s/1ocHsbTAxabZXVSm5ViNx3w), 提取码: 98f2|
 
 <br/>
 
