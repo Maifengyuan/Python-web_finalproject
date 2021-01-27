@@ -215,8 +215,19 @@ Python期末项目相当于对整个学期的知识进行总结运用，在开�
 |Python读取图片|[博客](https://www.cnblogs.com/lantingg/p/9259840.html)|
 |flask文件运行报错，错误信息UnicodeDecodeEorror:'utf-8' codec can't decode byte 0xc2 in position 2: invalid continuation bute|[参考解决方案](https://blog.csdn.net/qq_41109668/article/details/82908455)，[参考2](https://blog.csdn.net/stone9159/article/details/79071316)|
 |cmd-mysql拒绝链接，2003-Can't connect to MySql server on 'localhost'(10061)错误|[解决方案](https://blog.csdn.net/yyx3214/article/details/97097696)|
+|Pyechart项目案例|[链接](http://pyecharts.herokuapp.com/geo)|
+|Pyechart官方文档|[链接](https://pyecharts.org/#/)|
+|ALAPI官方文档|[链接](https://www.alapi.net/)|
+|Pycharm运行flask|[参考教程1](https://www.cnblogs.com/shiyia/p/13864353.html);[参考教程2](https://blog.csdn.net/cckavin/article/details/83746927)|
+|{%extends "bootstrap/base.html"%}的添加，使得其他block无法继承|[解决方案](https://blog.csdn.net/qq_41856814/article/details/101312988)|
+|Pychart+flask使用指南|[解决方案](https://blog.csdn.net/u013421629/article/details/78191967)|
+|TypeError: __init__() takes 1 positional argument but 2 were given python|[解决方案](TypeError: __init__() takes 1 positional argument but 2 were given python)|
+|The server encountered an internal error or misconfiguration and was unable to complete your request|[stack overflow](https://stackoverflow.com/questions/6438475/the-server-encountered-an-internal-error-or-misconfiguration-and-was-unable-to-c)|
+||[]()|
 
 <br/>
 <br/>
 
 <h3 id="chapter0">项目体验说明</h3>
+
+> 请参考文档说明——项目使用手册——百度网盘视频展示
